@@ -12,5 +12,6 @@ uninstall:
 	@rm -rf /usr/local/Ttools/
 	@sed -i '/Ttools/d' /etc/profile
 	@echo ""
-	@echo "卸载完成"
+	@echo "卸载完成..."
 	@echo ""
+
