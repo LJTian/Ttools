@@ -14,4 +14,3 @@ uninstall:
 	@echo ""
 	@echo "卸载完成..."
 	@echo ""
-
