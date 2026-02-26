@@ -1,5 +1,7 @@
 # 定义要去掉的前缀
-PREFIX="m.daocloud.io/docker.io/library/"
+PREFIX="${1:-hub.iot-home.cn/library/}"
+
+echo "🔍 当前目标前缀: ${PREFIX}"
 
 # 找出所有带有该前缀的镜像并遍历处理
 docker images --format "{{.Repository}}:{{.Tag}}" | grep "^${PREFIX}" | while read -r old_image; do
